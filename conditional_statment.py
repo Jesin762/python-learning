@@ -49,4 +49,4 @@ if num>0:
 elif num<0:
     print("number is negative")
 else:
-    print("number is zero")
+    print("oops number is zero")
