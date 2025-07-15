@@ -30,4 +30,3 @@ for c,k in enumerate(box):
     print(c,k)
     """
 
-

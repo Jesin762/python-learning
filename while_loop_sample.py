@@ -9,7 +9,8 @@ count=1
 while count<=10:
     print(f" {num} * {count} = {num * count}")
     count=count+1
-    """
+    
+
 while True:
  num1=int(input("enter a number:"))
  num2=int(input("enter the second number:"))
@@ -28,6 +29,5 @@ while True:
  hello=str(input("if you wamt to continue : yes or no :"))
  if hello.lower()!="yes":
     break
-    
-    
+"""
     
