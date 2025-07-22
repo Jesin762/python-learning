@@ -81,7 +81,86 @@ print(list(map(lambda x:True if x%2==0 else False,numbers)))"""
 
 #filter
 
-number=[12,3,7,14,10,5]
-print(list(filter(lambda x:True if x%2==0 else False,number)))
+"""number=[12,3,7,14,10,5]
+print(list(filter(lambda x:True if x%2==0 else False,number)))"""
+
+"""my_list=[1,33,66,7]
+print(my_list.enumerate())"""
+
+#zip ---used to covert 2 list in to one 
+"""
+for k,v in zip(["name","age","place"],["jesin",20,"kochi"]):
+    print(k,v)
+"""
+
+#exception handling-- instead of error they tell us what is the error
+
+"""a,b=10,0
+try:
+    c= a/b
+    print(c)
+except Exception:
+    print("please enter a vaild number")"""
+
+#using as e
+
+"""a,b=10,0
+try:
+    c= a/b
+    print(c)
+except Exception as e:
+    print(e)
+    print("please enter a vaild number")"""
+
+#diiferent types of error
+
+"""a,b=10,0
+try:
+    c=a/b
+    print(c)
+except ZeroDivisonErro:
+ print("please enter a vaild number greater than")
+except NameError:
+    print("value not defined dor operants")"""
+
+
+
+
+#program to enter 2 numbers using splits
+"""
+a,b=map(int, input("enter two number:").split())
+print(a,b)"""
+
+#finally
+ 
+"""a,b=map(int, input("enter two number:").split())
+try:
+    c=a/b
+    print(c)
+except Exception as e:
+    print("enter a valid number")
+finally:
+    print("program executed")"""
+
+while True:
+ try: 
+   a ,b=map(int, input("enter two number:").split())
+   try:
+     c=a/b
+     print(c)
+   except Exception:
+    print("enter a divisiblr number")
+ except NameError:
+      print("not found")
+ except Exception as e:
+   print(e)
+   
+
+
+   
+
+
+
+
 
 

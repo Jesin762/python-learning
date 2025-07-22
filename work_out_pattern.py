@@ -22,5 +22,7 @@ for i in range(5,0,-1):            # q no:2
 for row in range(1,6):
     for col in range(1,row+1):
         print(" "*5 col,end=" ")
-    print()    
+    print() 
+   
+
     
