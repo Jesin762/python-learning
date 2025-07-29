@@ -21,8 +21,8 @@ print(lap1.RAM)
 print(lap2.RAM)
 print(laptops.owner)"""
 
-#inheritence
-
+#inheritence--single inhertience
+"""
 class vehicles:
     def __init__(self,m,p):
         self.model=m
@@ -35,5 +35,49 @@ class car(vehicles):
         super().__init__(m,p)
 
 c1=car("red","2008","ferarri","201bhp")
-print(c1.color,c1.model)
+print(c1.color,c1.model)"""
+
+
+#multiple inheritence
+
+"""class father:
+    def working(self):
+        print("father:fashion designer")
+class mother:
+    def working(self):
+        print("mother:model")
+class child(father,mother):
+    def working(self):
+        father.working(self)
+        mother.working(self)
+        print("child:devolper")
+c=child()
+c.working()"""
+
+#multiple inheritence using init
+
+class person:
+    def __init__(self,name):
+        self.name=name
+        super().__init__(name)
+class salary:
+    def __init__(self,salary):
+        self.salary=salary
+        super().__init__()
+class department(person,salary):
+    def __init__(self,name,salary,department):
+        self.department=department
+        super().__init__(name)
+        salary.__init__(self,salary)
+    def display(self):
+        print(f"name:{self.name}")
+        print(f"salary:{self.salary}")
+        print(f"department:{self.department}")
+
+m=department("aswin","2000","front end")
+m.display()
+
+
+   
+
 
